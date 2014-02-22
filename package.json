@@ -1,0 +1,47 @@
+{
+  "name": "component-downloader",
+  "description": "download components from a remote",
+  "version": "0.0.0",
+  "author": {
+    "name": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "twitter": "https://twitter.com/jongleberry"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/downloader.js.git"
+  },
+  "bugs": {
+    "mail": "me@jongleberry.com",
+    "url": "https://github.com/component/downloader.js/issues"
+  },
+  "dependencies": {
+    "debug": "*",
+    "generator-supported": "~0.0.1",
+    "chanel": "^2.0.1",
+    "graceful-fs": "^2.0.2",
+    "rimraf": "^2.2.6",
+    "mkdirp": "~0.3.5",
+    "unglob": "~0.1.1",
+    "write-to": "^1.0.0",
+    "semver": "^2.2.0",
+    "decompress": "~0.1.6",
+    "co": "^3"
+  },
+  "devDependencies": {
+    "remotes": ">= 0.2.0",
+    "mocha": "^1.17",
+    "should": "^3.0",
+    "gnode": "0",
+    "regenerator": "0"
+  },
+  "scripts": {
+    "test": "NODE=gnode make test",
+    "prepublish": "make clean build"
+  },
+  "engines": {
+    "node": ">= 0.11.4"
+  }
+}
