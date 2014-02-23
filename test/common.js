@@ -18,11 +18,11 @@ describe('When downloading archives', function () {
 })
 
 function test(archive) {
-  var downloader = Downloader({
+  var download = Downloader({
     archive: archive
   });
 
-  it('should cleanup the components folder', function (done) {
+  before(function (done) {
     rimraf(join(process.cwd(), 'components'), done);
   })
 
@@ -30,8 +30,8 @@ function test(archive) {
     it('should download component/emitter@1.1.2', co(function* () {
       var repo = 'component/emitter';
       var ref = '1.1.2';
-      var folder = downloader.folder(repo, ref);
-      yield* downloader.download(repo, ref);
+      var folder = download.downloader.folder(repo, ref);
+      yield* download(repo, ref);
       assert.ok(fs.existsSync(folder));
       assert.ok(fs.existsSync(join(folder, 'component.json')));
       assert.ok(fs.existsSync(join(folder, 'index.js')));
@@ -45,8 +45,8 @@ function test(archive) {
     it('should download component/domify@master', co(function* () {
       var repo = 'component/domify';
       var ref = 'master';
-      var folder = downloader.folder(repo, ref);
-      yield* downloader.download(repo, ref);
+      var folder = download.downloader.folder(repo, ref);
+      yield* download(repo, ref);
       assert.ok(fs.existsSync(folder));
       assert.ok(fs.existsSync(join(folder, 'component.json')));
       assert.ok(fs.existsSync(join(folder, 'index.js')));
@@ -60,8 +60,8 @@ function test(archive) {
     it('should unglob component-test/glob@0.0.1', co(function* () {
       var repo = 'component-test/glob';
       var ref = '0.0.1';
-      var folder = downloader.folder(repo, ref);
-      yield* downloader.download(repo, ref);
+      var folder = download.downloader.folder(repo, ref);
+      yield* download(repo, ref);
       assert.ok(fs.existsSync(folder));
       assert.ok(fs.existsSync(join(folder, 'component.json')));
       assert.ok(fs.existsSync(join(folder, 'lib/index.js')));
