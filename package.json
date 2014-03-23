@@ -1,7 +1,7 @@
 {
   "name": "component-downloader",
   "description": "download components from a remote",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Jonathan Ong",
     "email": "me@jongleberry.com",
