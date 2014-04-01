@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "debug": "*",
+    "component-consoler": "^1.0.0",
     "generator-supported": "~0.0.1",
     "chanel": "^2.0.1",
     "graceful-fs": "^2.0.2",
