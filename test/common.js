@@ -71,5 +71,15 @@ function test(archive) {
       json.scripts.should.eql(['lib/index.js']);
       json.styles.should.eql(['lib/index.css']);
     }))
+
+    it('should download rogerz/d3-cloud-for-angular@d3221b5e2e0d6fe8864e0c48de14cabf5674be1e', co(function* () {
+      // https://github.com/component/component/issues/438
+      var repo = 'rogerz/d3-cloud-for-angular';
+      var ref = 'd3221b5e2e0d6fe8864e0c48de14cabf5674be1e';
+      var folder = download.downloader.folder(repo, ref);
+      yield* download(repo, ref);
+      assert.ok(fs.existsSync(join(folder, 'component.json')));
+      assert.ok(fs.existsSync(join(folder, 'images/20%.png')));
+    }))
   })
 }
