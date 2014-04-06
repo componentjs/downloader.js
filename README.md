@@ -1,4 +1,4 @@
-# Component Downloader
+# Component Downloader [![Build Status](https://travis-ci.org/component/downloader.js.svg?branch=master)](https://travis-ci.org/component/downloader.js)
 
 Downloads components based on [remotes](https://github.com/component/remotes.js).
 
