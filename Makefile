@@ -18,7 +18,7 @@ test:
 		--harmony-generators \
 		--require should \
 		--reporter spec \
-		--timeout 10000 \
+		--timeout 30s \
 		--bail
 
 .PHONY: test clean

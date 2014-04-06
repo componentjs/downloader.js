@@ -81,5 +81,17 @@ function test(archive) {
       assert.ok(fs.existsSync(join(folder, 'component.json')));
       assert.ok(fs.existsSync(join(folder, 'images/20%.png')));
     }))
+
+    it('should download bitbucket.org/jongleberry/component-test-glob', co(function* () {
+      var repo = 'jongleberry/component-test-glob';
+      var ref = '0.0.0';
+      var folder = download.downloader.folder(repo, ref);
+      yield* download(repo, ref);
+      assert.ok(fs.existsSync(join(folder, 'component.json')));
+      assert.ok(fs.existsSync(join(folder, 'index.js')));
+
+      var json = require(join(folder, 'component.json'));
+      json.scripts.should.eql(['index.js']);
+    }))
   })
 }

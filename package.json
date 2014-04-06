@@ -32,7 +32,7 @@
     "co": "^3"
   },
   "devDependencies": {
-    "remotes": "^1.0.1",
+    "remotes": "^1.1.0",
     "mocha": "^1.17",
     "should": "^3.0",
     "gnode": "0",
