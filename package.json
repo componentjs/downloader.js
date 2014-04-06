@@ -1,7 +1,7 @@
 {
   "name": "component-downloader",
   "description": "download components from a remote",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "author": {
     "name": "Jonathan Ong",
     "email": "me@jongleberry.com",
@@ -9,14 +9,7 @@
     "twitter": "https://twitter.com/jongleberry"
   },
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/component/downloader.js.git"
-  },
-  "bugs": {
-    "mail": "me@jongleberry.com",
-    "url": "https://github.com/component/downloader.js/issues"
-  },
+  "repository": "component/downloader.js",
   "dependencies": {
     "debug": "*",
     "component-consoler": "^1.0.0",
