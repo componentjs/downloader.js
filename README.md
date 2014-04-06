@@ -40,8 +40,9 @@ The `options` are:
 - `remotes` - remotes to download from. Defaults to only `github`.
 - `fields` - `fields` to download and unglob. Defaults to those specificed in the specifications.
 - `concurrency` <1> - number of concurrent file downloads.
-- `verbose` <false> - log when installs start and finish
+- `verbose` <false> - log when installs start and finish.
 - `archive` <archive> - download the entire repository instead of just the files specified in the `fields`.
+- `maxFiles` <10> - maximum number of files to download before just downloading the entire repository.
 
 ### yield* download([remotes], repo, ref, [archive])
 
