@@ -18,14 +18,17 @@
     "graceful-fs": "^2.0.2",
     "rimraf": "^2.2.6",
     "mkdirp": "~0.3.5",
-    "unglob": "~0.1.1",
+    "unglob": "~0.1.2",
     "write-to": "^1.0.0",
     "semver": "^2.2.0",
     "decompress": "~0.2.0",
     "co": "^3"
   },
+  "peerDependencies": {
+    "remotes": "^1.1.1"
+  },
   "devDependencies": {
-    "remotes": "^1.1.0",
+    "remotes": "^1.1.1",
     "mocha": "^1.17",
     "should": "^3.0",
     "gnode": "0",
