@@ -1,4 +1,15 @@
 
+1.1.3 / 2014-06-11
+==================
+
+ * remove test npm pack from published files
+
+1.1.2 / 2014-06-11
+==================
+
+ * pinned regenerator 0.4.6
+ * updated .npmignore to exclude `components` directory
+
 1.1.1 / 2014-04-07
 ==================
 
