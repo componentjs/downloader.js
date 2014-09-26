@@ -1,7 +1,7 @@
 {
   "name": "component-downloader",
   "description": "download components from a remote",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "author": {
     "name": "Jonathan Ong",
     "email": "me@jongleberry.com",
@@ -12,7 +12,7 @@
   "repository": "component/downloader.js",
   "dependencies": {
     "debug": "*",
-    "component-consoler": "^1.0.0",
+    "component-consoler": "^2.0.0",
     "generator-supported": "~0.0.1",
     "chanel": "^2.0.1",
     "graceful-fs": "^2.0.2",
