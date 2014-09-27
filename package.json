@@ -24,9 +24,6 @@
     "decompress": "~0.2.0",
     "co": "^3"
   },
-  "peerDependencies": {
-    "remotes": "^1.1.1"
-  },
   "devDependencies": {
     "remotes": "^1.1.1",
     "mocha": "^1.17",
