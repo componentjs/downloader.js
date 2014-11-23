@@ -1,3 +1,7 @@
+1.1.7 / 2014-11-22
+==================
+
+ * use archive, regardless if git tree feature is available [#7](https://github.com/componentjs/downloader.js/pull/7)
 
 1.1.3 / 2014-06-11
 ==================
