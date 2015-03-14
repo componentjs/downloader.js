@@ -1,3 +1,8 @@
+1.1.8 / 2015-03-14
+==================
+
+ * fix `component-remotes` dependency, move from __devDependency__ to __dependency__
+
 1.1.7 / 2014-11-22
 ==================
 
