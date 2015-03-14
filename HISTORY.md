@@ -1,3 +1,8 @@
+1.2.0 / 2015-03-14
+==================
+
+ * provide __resolved__ property in component.json files for shrinkwrapper
+
 1.1.9 / 2015-03-14
 ==================
 
