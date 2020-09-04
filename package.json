@@ -22,7 +22,7 @@
     "unglob": "~0.1.2",
     "write-to": "^1.0.0",
     "semver": "^2.2.0",
-    "decompress": "~0.2.0",
+    "decompress": "~4.2.1",
     "co": "^3"
   },
   "devDependencies": {
